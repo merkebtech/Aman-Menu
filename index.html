@@ -51,5 +51,65 @@
         
       </div>
     </header>
+    <!--First section-->
+
+  <section class="flex justify-center py-0 px-0 bg-black">
+  <div class="w-full  bg-green-950 shadow-2xl overflow-hidden">
+
+    <!-- HEADER IMAGE -->
+<div class="  w-full
+    sm:w-3/4
+    md:w-2/3
+    lg:w-1/2
+    h-20
+    bg-cover
+    bg-center
+    relative"
+
+
+     style="
+       background-image: url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=800');
+    
+       clip-path: inset(0% 0% 0% 0% round 0px 0px 55px 40px);
+     ">
+</div>
+   <div class="text-center">
+  <h2 class="font-bold  text-1xl text-yellow-400 m-0">Breakfast</h2>
+  <h2 class="font-semibold text-1xl text-yellow-400  mb-4">ቁርስ</h2>
+  <div id="breakfast-list" class="max-w-md mx-auto px-2"></div>
+</div>
+
+    </section>
+    <script>
+      const breakFastFoodItems=[
+        
+  { name1: "Fleato  Tips", name2: "ጭቅና ጥብስ", price: 450 },
+      { name1: "Specal Bean Full ", name2: "እስፔሻል ፉል", price: 165 },
+        {
+          name1: "Egg With Tomato Souce",
+          name2: "እንቁላል በቲማቲም ስልስ",
+          price: 185,
+        },
+        { name1: "Fried Egg", name2: "የተጠበሰ እንቁላል", price: 175 },
+        { name1: "Scrambled Egg", name2: " እንቁላል ፍርፍር", price: 185 },   
+      ];
+      function renderMenuItems(items,containerId){
+        const container=document.getElementById(containerId);
+        container.innerHtml="";
+        items.forEach((item)=>{
+          const div=document.createElement("div");
+          div.className="flex items-start justify-between gap-2 py-0.5  border-b border-white/30";
+          div.innerHTML=`
+          <div>
+<h2 class=" text-yellow-400 text-sm font-medium leading-tight">${item.name1}</h2>
+<p class="text-yellow-400 text-xs leading-tight ">${item.name2}</p>
+            </div>
+ <p class="text-yellow-400 text-sm font-bold whitespace-nowrap">${item.price}</p>         
+          `;
+          container.appendChild(div);
+        })
+      }
+      renderMenuItems(breakFastFoodItems, "breakfast-list");
+    </script>
   </body>
 </html>
