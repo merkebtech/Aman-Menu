@@ -551,7 +551,7 @@
         {
           name1: " Special Fetira ",
           name2: "እስፔሻል  ፈጢራ  ",
-          price: 235,
+          price: 230,
         },
          { name1: " Chechbesa", name2: " ጨጨብሳ", price: 180 },
   { name1: "Special Chechbesa", name2: " እስፔሻል ጨጨብሳ", price: 230 },
@@ -562,7 +562,7 @@
       ];
  const sandwichesItems=[
   { name1: "Egg Sandwiches", name2: " እንቁላል ሳንዱች ", price: 210},
-  { name1: " Special Egg Sandwiches", name2: " እስፔሻል እንቁላል ሳንዱች ", price: 280 },
+  { name1: " Special Egg Sandwiches", name2: " እስፔሻል እንቁላል ሳንዱች ", price: 290 },
         { name1: "Club Sandwiches", name2: " ክለብ ሳንዱች", price: 400 },  
   { name1: "Special Club Sandwiches", name2: "እስፔሻል ክለብ ሳንዱች", price: 470 },
         { name1: "Meet Sandwiches ", name2: "ስጋ ሳንዱች", price: 275 },
@@ -746,7 +746,20 @@
     { name1: "Chicken Fried", name2: "ዶሮ የተጠበሰ", price: 400},
     { name1: "Chicken Cutlet", name2: "ዶሮ ኮተሌት ", price: 400}
 ];
-
+const MoktailItems = [
+    { name1: "Strowbarry Mocktail", name2: "እንጆሪ ሞክቴል", price: 150 },
+    { name1: "Avater", name2: "አምሳያ", price: 150 },
+    { name1: "Icelate", name2: "አይስሌት ", price: 150 },
+  { name1: "Titank Mocktail", name2: " ታይታኒክ ሞክቴል", price:150 },
+  { name1: "Jiji Moketail", name2: "ጂጂ ሞክቴል", price: 150 },
+    { name1: "Specal Moketail", name2: "ልዩ ሞክቴል", price: 180 },
+    { name1: "Orange Moketail", name2: "ብርቱካን ሞክቴል", price: 150 },
+    { name1: "Lemen Moketail", name2: "ሌመን ሞክቴል", price: 150 },
+     { name1: "Frapachio", name2: "ፍራፓቺዮ", price: 150 },
+    { name1: "Ice Coffee", name2: "የበረዶ ቡና", price: 150 },
+      { name1: " Caramel Ice Coffee", name2: "ካራሚል የበረዶ ቡና", price: 150 },
+    
+];
 const hotDrinksItems = [
     { name1: "Aman Special Tea", name2: "አማን ልዩ ሻይ", price: 100 },
     { name1: "Tea", name2: "ሻይ", price: 30 },
@@ -820,8 +833,8 @@ const TeaBugsItems = [
     { name1: "Axumite Big Wine", name2: "አክሱማዊት ትልቅ ወይን", price: 750 },
     { name1: "Axumite Small Wine", name2: "አክሱማዊት ትንሽ ወይን", price: 400 },
     { name1: "Acacia Wine", name2: "አካሺያ ወይን", price: 1000},
-    { name1: "Kamila Wine", name2: "ካሚላ ወይን", price: 650},
-    { name1: "Awash Wine", name2: "የአዋሽ ወይን", price: 1000}
+    { name1: "Kamila Wine", name2: "ካሚላ ወይን", price: 800},
+    { name1: "Awash Wine", name2: "የአዋሽ ወይን", price: 650}
     ,{ name1: "Acacia Wine by Red", name2: "አካሺያ ወይን  በቀይ", price: 1000}
     ,{ name1: "Acacia Wine by Pink", name2: "አካሺያ ወይን በሮዝ", price: 1000}
     ,{ name1: "Guder Tekeshino", name2: "ጉደር ተከሺኖ", price: 1200},
@@ -980,7 +993,7 @@ const TeaBugsItems = [
   renderMenuItems(fruitItems, "fruit-list");
   renderMenuItems(shakesItems, "softdrink-list");
   renderMenuItems(saladItems, "salad-list");
-  renderMenuItems(hotDrinksItems, "hotdrink-list");
+  renderMenuItems(MoktailItems, "hotdrink-list");
   // also populate the Hot Drinks section placed after the Cake page
   renderMenuItems(hotDrinksItems, "hotdrink-list-aftercake");
   renderMenuItems(TeaBugsItems, "teabags-list-aftercake");
