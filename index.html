@@ -3,12 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Palms Menu</title>
+    <title>Aman's Menu</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
     />
+    <!-- favicon: use the aman logo at top-left as site icon -->
+    <link rel="icon" href="./aman_2.png" type="image/png" />
+    <link rel="apple-touch-icon" href="./aman_2.png" />
     <!-- Fancy display fonts for the title to match logo style -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" />
     <style>
@@ -182,8 +185,8 @@
   <div id="fastfood-list" class="max-w-md mx-auto px-3 mb-8"></div>
 </div>
  <div class="text-left">
-  <h2 class="font-bold  text-3xl text-yellow-400 px-2 m-0">Fasting Breakfast</h2>
-  <h2 class="font-semibold text-2xl text-yellow-400  px-2 mb-2">የዖም ቁርስ</h2>
+  <h2 class="font-bold  text-3xl text-yellow-400 px-2 m-0">Fasting Food</h2>
+  <h2 class="font-semibold text-2xl text-yellow-400  px-2 mb-2">የዖም ምግብ</h2>
   <div id="fastbreakfast-list" class="max-w-md mx-auto px-3 mb-8"></div>
 </div>
 </div>
@@ -192,7 +195,7 @@
     <!-- Thried section-->
       <section class=" relative w-full flex justify-center py-0 px-0 bg-black">
     <div class="absolute inset-0">
-        <img src="./g2.jpg" class="w-full h-full object-cover" />
+        <img src="./lambtibs.jpeg" class="w-full h-full object-cover" />
         <div class="absolute inset-0 bg-green-950/50"></div>
       </div>
   <div class=" relative z-10 w-full  shadow-2xl overflow-hidden">
@@ -207,17 +210,19 @@
     
 </div>
  <div >
-      <p class="font-bold text-4xl mb-2  px-3 text-yellow-400 px-7  ">Traditional </p>
-       <p class="font-bold text-4xl mt-0 mb-4   px-3 text-yellow-400 px-7  ">Food</p>
+    <p class="font-bold text-4xl mb-2 px-3 text-yellow-400 px-7">Non Fasting Foods</p>
 
-        <p class="font-semibold text-3xl  mt-0 mb-2 text-yellow-400  mt-0 mb-6 px-7 ">ባህላዊ ምግብ</p>
-     </div>
-     <div class="grid grid-cols-1 gap-4">
-   <div >
-  <h2 class="font-bold mx-auto px-2  text-3xl text-yellow-400 m-0 px-6"> Traditional Food </h2>
-  <h2 class="font-semibold mx-auto px-2 text-2xl text-yellow-400  mb-2 px-6">ባህላዊ ምግብ </h2>
-  <div id="food-list" class="max-w-md mx-auto px-2 mb-6"></div>
-</div>
+      <p class="font-semibold text-3xl mt-0 mb-2 text-yellow-400 mt-0 mb-6 px-7">የፍስክ ምግቦች</p>
+    </div>
+    <div class="grid grid-cols-2 gap-4">
+  <div>
+  <h2 class="font-semibold mx-auto px-2 text-2xl text-yellow-400 mb-2">የፍስክ ምግቦች</h2>
+  <div id="food-list" class="max-w-md mx-auto px-2 mb-8"></div>
+  </div>
+  <div class="text-left">
+  <h2 class="font-bold text-3xl text-yellow-400 m-0">የፍየል ቁርጥ</h2>
+  <div id="fiyel-list" class="max-w-md mx-auto px-3 mb-8"></div>
+  </div>
   </div>
       </div>
 
@@ -402,9 +407,9 @@
     <script>
       const breakFastFoodItems=[
          { name1: "Normal Nashife", name2: "ኖርማል ናሽፍ", price: 175 },
-         { name1: "specal Nashife", name2: "እስፔሻል ናሽፍ", price: 215 },
+         { name1: "Special Nashife", name2: "እስፔሻል ናሽፍ", price: 215 },
         { name1: "Bean Full", name2: "ፉል", price: 175 },
-        { name1: "Specal Bean Full ", name2: "እስፔሻል ፉል", price: 210 },
+  { name1: "Special Bean Full ", name2: "እስፔሻል ፉል", price: 210 },
         {
           name1: "Egg With Tomato Souce",
           name2: "እንቁላል በቲማቲም ስልስ",
@@ -412,19 +417,19 @@
         },
        
         { name1: "Scrambled Egg", name2: " እንቁላል ፍርፍር", price: 190 },
-        { name1: "Specal Omelette", name2: " እስፔሻል ኦምሌት ", price: 270 },
+  { name1: "Special Omelette", name2: " እስፔሻል ኦምሌት ", price: 270 },
       ,
       { name1: "Egg Omelette", name2: " እንቁላል ኦምሌት ", price: 200 },
         { name1: "Egg With Meat", name2: " እንቁላል በስጋ ", price: 300 },
       
         { name1: "Fetira ", name2: " ፈጢራ ", price: 190 },
         {
-          name1: " Specal Fetira ",
+          name1: " Special Fetira ",
           name2: "እስፔሻል  ፈጢራ  ",
           price: 235,
         },
          { name1: " Chechbesa", name2: " ጨጨብሳ", price: 180 },
-        { name1: "Specal Chechbesa", name2: " እስፔሻል ጨጨብሳ", price: 230 },
+  { name1: "Special Chechbesa", name2: " እስፔሻል ጨጨብሳ", price: 230 },
 
         { name1: "Dulet ", name2: " ዱለት", price: 280 },
         
@@ -432,9 +437,9 @@
       ];
  const sandwichesItems=[
   { name1: "Egg Sandwiches", name2: " እንቁላል ሳንዱች ", price: 210},
-  { name1: " Specal Egg Sandwiches", name2: " እስፔሻል እንቁላል ሳንዱች ", price: 280 },
+  { name1: " Special Egg Sandwiches", name2: " እስፔሻል እንቁላል ሳንዱች ", price: 280 },
         { name1: "Club Sandwiches", name2: " ክለብ ሳንዱች", price: 400 },  
-        { name1: "Specal club Sandwiches", name2: "እስፔሻል ክለብ ሳንዱች", price: 470 },
+  { name1: "Special Club Sandwiches", name2: "እስፔሻል ክለብ ሳንዱች", price: 470 },
         { name1: "Meet Sandwiches ", name2: "ስጋ ሳንዱች", price: 275 },
       
        
@@ -461,127 +466,82 @@
        ]
     
  const fastbreakFastFoodItems=[
-         
-        { name1: "Fasting injera Firfir", name2: "የዖም እንጀራ ፍርፍር", price: 138 },
-        { name1: "Specal Fasting Firfir  ", name2: "እስፔሻል የዖም ፍርፍር", price: 185 },
-        {
-          name1: "Bread Firfir",
-          name2: "ዳቦ  ፍርፍር",
-          price: 135,
-        },
-         {
-          name1: " Specal Bread Firfir",
-          name2: " እስፔሻል ዳቦ  ፍርፍር",
-          price: 155,
-        },
-         {
-          name1: " Special Potato Chips",
-          name2: " እስፔሻል ድንች  ፍርፍር",
-          price: 227,
-        },
-        {
-          name1: " Potato Chips",
-          name2: "  ድንች  ፍርፍር",
-          price: 167,
-        },
-       { name1: "Fasting Fetira ", name2: "የዖም ፈጢራ ", price: 177 },
-        { name1: " Chechbesa", name2: " ጨጨብሳ", price: 185 },
-        { name1: "vegitable with Bread", name2: " አትክልት በዳቦ", price: 167 },
-        { name1: "Salad", name2: " ሰላጣ ", price: 265 },
-         { name1: "Drekoshi Firfir", name2: "ድርቆሽ ፍርፍር", price: 165 },
-        
+        { name1: "Maccoroni with veg", name2: "መኮረኒ በአትክልት", price: 195 },
+        { name1: "Maccoroni with tomato", name2: "መኮረኒ በስልስ", price: 195 },
+        { name1: "Rice With Vegetable", name2: "ሩዝ በአትክልት", price: 230 },
+        { name1: "Rice With Tomato", name2: "ሩዝ በቲማቲም", price: 195 },
+        { name1: "Vegetable With Bread", name2: "አትክልት በዳቦ", price: 190 },
+        { name1: "Agelgel (Full)", name2: "ሙሉ አገልግል", price: 800 },
+        { name1: "Agelgel (Half)", name2: "ግማሽ አገልግል", price: 400 },
+        { name1: "Fasting Mahberawi", name2: "የጾም ማህበራዊ", price: 1000 },
+        { name1: "Family", name2: "ቤተሰብ", price: 1000 },
+        { name1: "Bufe", name2: "ቡፌ", price: 350 },
+        { name1: "Potato with Telba", name2: "ድንች በተልባ", price: 150 },
+        { name1: "Gomen Kitefo", name2: "ጎመን ክትፎ", price: 250 },
+        { name1: "Gomen Tibs", name2: "ጎመን ጥብስ", price: 190 },
+        { name1: "Fasting Dulet", name2: "የጾም ዱለት", price: 195 },
+        { name1: "Fasting Tibs", name2: "የጾም ጥብስ", price: 195 },
       ];
        const fastFoodItem = [
-        { name1: "Palmes Specal", name2: " ፖልምስ እስፔሻል ", price: 977 },
-        { name1: "Palmes Specal Kategna", name2: "ፖልምስ እስፔሻል ቃተኛ", price: 550 },
-        { name1: "Gomen Ketefo", name2: "ጎመንክትፎ", price: 146 },
-        { name1: "Shro with Vegetable ", name2: " ሽሮበ አትክልት", price: 207 },
-        {
-          name1: " Shro Tegabino",
-          name2: " ሽሮ ተጋቢኖ",
-          price: 168,
-        },
-        {
-          name1: "Shro Fesse",
-          name2: " ሽሮ ፈሰስ",
-          price: 147,
-        },
-        {
-          name1: "Shro with Tomato",
-          name2: " ሽሮ በቲማቲም",
-          price: 207,
-        },
-        {
-          name1: "Shro Lala",
-          name2: " ሽሮ ላላ",
-          price: 167,
-        },
-        {
-          name1: " Specal Shro",
-          name2: " እስፔሻል ሽሮ ",
-          price: 217,
-        },
-         {
-          name1: " Tomato Diced",
-          name2: "ቲማቲም ቁርጥ ",
-          price: 140,
-        },
-        { name1: "Tomato Souce", name2: "ቲማቲም ስልስ", price: 140 },
-        { name1: "Teliba fitifite", name2: "ተልባፍትፍት", price: 150 },
-        
-        {
-          name1: "Potatoes with flax",
-          name2: " ድንችበተልባ",
-          price: 135,
-        },
-        {
-          name1: "Ayenete",
-          name2: "አይነት",
-          price: 234,
-        },
-        {
-          name1: "Sunflower Scrambled",
-          name2: "የሱፍ ፍትፍት ",
-          price: 150,
-        },
-        {
-          name1: "Fasting Befe",
-          name2: "የፆምብፌ ",
-          price: 275,
-        },
-         {
-          name1: "Elebet",
-          name2: "እልበት ",
-          price: 120,
-        },
+        { name1: "Aman Special", name2: "አማን ስፔሻል", price: 1500 },
+        { name1: "Shiro", name2: "ሽሮ", price: 150 },
+        { name1: "Special Shiro", name2: "ስፔሻል ሽሮ", price: 230 },
+        { name1: "BeAyenet", name2: "በያይነት", price: 240 },
+        { name1: "Shiro Tegabino", name2: "ሽሮ ተጋቢኖ", price: 180 },
+        { name1: "Shiro Lala", name2: "ሽሮ ላላ", price: 180 },
+        { name1: "Fasting Firfir", name2: "የጾም ፍርፍር", price: 180 },
+        { name1: "Special Fa. Firfir", name2: "ስፔሻል የጾም ፍርፍር", price: 250 },
+        { name1: "Potato Firfir", name2: "ድንች ፍርፍር", price: 230 },
+        { name1: "Special Dinich Firfir", name2: "ስፔሻል ድንች ፍርፍር", price: 250 },
+        { name1: "Telba Fetfet", name2: "ተልባ ፍትፍት", price: 200 },
+        { name1: "Suf Fetfet", name2: "ሱፍ ፍትፍት", price: 180 },
+        { name1: "Tomato Lebleb", name2: "ቲማቲም ለብለብ", price: 170 },
+        { name1: "Dirkosh Firfir", name2: "ድርቆሽ ፍርፍር", price: 230 },
+        { name1: "Special Dirkosh Firfir", name2: "ስፔሻል ድርቆሽ ፍርፍር", price: 270 },
+        { name1: "Sphaggetti with tomato", name2: "ፓስታ በስልስ", price: 200 },
+        { name1: "Sphagetti With Vegetable", name2: "ፓስታ በአትክልት", price: 230 },
       ];
       const traditionalfoodItems = [
-         { name1: "Palms Specal ", name2: " ፖልምስ እስፔሻል ", price: 1700 },
-           { name1: "Palms Kategna ", name2: " ፖልምስ ቃተኛ", price: 790 },
-        { name1: "Specal Meat Scrambled", name2: "እስፔሻል ስጋ ፍርፍር ", price: 285 },
-        { name1: "Normal Meat Scrambled", name2: " ስጋ ፍርፍር ", price: 225 },
-        { name1: "Quanta Firfir ", name2: "ቋንጣ ፍርፍር", price: 245 },
-        {
-          name1: " Specal Quanta Firfir",
-          name2: " እስፔሻል ቋንጣ ፍርፍር",
-          price: 315,
-        },
-        { name1: "Lumb Tips", name2: "የበግ ጥብስ", price: 350 },
-          { name1: "Yebege Kekel", name2: "የበግ ቅቅል", price: 245 },
-        { name1: " Tips Firfir", name2: " ጥብስ ፍርፍር", price: 285 },
-          { name1: " Specal Tips Firfir", name2: " እስፔሻል ጥብስ ፍርፍር", price: 330 },
-        { name1: "Gomen Ketefo with Butter", name2: "ጎመን ከተፎ በቅቤ", price: 195 },
-        { name1: "Gomen with meet", name2: "ጎመን በስጋ", price: 195 },
-        { name1: "Dulet", name2: "ዱለት", price: 193},
-        { name1: "Melase Senber", name2: "ምላስ ሰንበር", price: 265},
-        { name1: "Dulet", name2: "ዱለት", price: 193},
-        { name1: "Shro With Butter", name2: "ሽሮ በቅቤ ", price: 145 },
-        {
-          name1: "Shro With butter and meat",
-          name2: " ሽሮ በቅቤ እና በስጋ",
-          price: 195,
-        },
-        { name1: "Fleato  Tips", name2: "ጭቅና ጥብስ", price: 285 },
+        { name1: "Aman Special", name2: "አማን ስፔሻል", price: 2500 },
+        { name1: "Lamb Tibs", name2: "የበግ ጥብስ", price: 400 },
+        { name1: "Special Tibs", name2: "ስፔሻል ጥብስ", price: 450 },
+        { name1: "Quanta Firfir", name2: "ቋንጣ ፍርፍር", price: 320 },
+        { name1: "Special Quanta Firfir", name2: "ስፔሻል ቋንጣ ፍርፍር", price: 360 },
+        { name1: "Tibs Firfir", name2: "ጥብስ ፍርፍር", price: 350 },
+        { name1: "Meat Firfir", name2: "ስጋ ፍርፍር", price: 300 },
+        { name1: "Egg With Meat", name2: "እንቁላል በስጋ", price: 250 },
+        { name1: "Special Meat Firfir", name2: "ስፔሻል ስጋ ፍርፍር", price: 350 },
+        { name1: "Shiro Bozena", name2: "ሽሮ በስጋ", price: 250 },
+        { name1: "Rice With Meat", name2: "ሩዝ በስጋ", price: 280 },
+        { name1: "Sphagetti With Meat", name2: "ፓስታ በስጋ", price: 280 },
+        { name1: "Kitfo", name2: "ክትፎ", price: 550 },
+        { name1: "Special Kitfo", name2: "ስፔሻል ክትፎ", price: 650 },
+        { name1: "Special Tibs Firfir", name2: "ስፔሻል ጥብስ ፍርፍር", price: 400 },
+        { name1: "Potato with meat", name2: "ድንች በስጋ", price: 210 },
+        { name1: "Minchet", name2: "ምንቸት", price: 250 },
+        { name1: "Maccorni with meat", name2: "መኮረኒ በስጋ", price: 265 },
+        { name1: "Maccorni With tuna", name2: "መኮረኒ በቱና", price: 245 },
+        { name1: "Genfo", name2: "ገንፎ", price: 150 },
+        { name1: "Azifa", name2: "አዚፋ", price: 185 },
+        { name1: "Awazie With Butter", name2: "አዋዜ በቅቤ", price: 150 },
+        { name1: "Kikil", name2: "ቅቅል", price: 290 },
+        { name1: "Gomen With Meat", name2: "ጎመን በስጋ", price: 250 },
+        { name1: "Beteseb", name2: "ቤተሰብ", price: 800 },
+        { name1: "Mahberawi", name2: "ማህበራዊ", price: 1400 },
+        { name1: "Agelgel (Full)", name2: "ሙሉ አገልግል", price: 1300 },
+        { name1: "Agelgel (Half)", name2: "ግማሽ አገልግል", price: 650 },
+      ];
+
+      const fiyelItems = [
+        { name1: "1kg Tibs", name2: "1 ኪሎግ ጥብስ", price: 2000 },
+        { name1: "1/2kg Tibs", name2: "ግማሽ ኪ.ግ ጥብስ", price: 1000 },
+        { name1: "1/4kg Tibs", name2: "ሩብ ኪ.ግ ጥብስ", price: 500 },
+        { name1: "1kg Shenkora", name2: "1ኪሎ ሸንኮራ", price: 2000 },
+        { name1: "1/2kg Shenkora", name2: "ግማሽ ሸንኮራ", price: 1000 },
+        { name1: "1/4kg Shenkora", name2: "ሩብ ሸንኮራ", price: 500 },
+        { name1: "1kg Kurmala", name2: "1ኪሎ ኩርማላ", price: 2000 },
+        { name1: "1/2kg Kurmala", name2: "ግማሽ ኩርማላ", price: 1000 },
+        { name1: "1/4kg Kurmala", name2: "ሩብ ኩርማላ", price: 500 },
       ];
            const fruitItems = [
     { name1: "Papaya", name2: "ፓፓያ", price: 138 },
@@ -632,7 +592,7 @@
        { name1: "Hot Chekolate", name2: "ሆትቸኮሌት", price: 90 },
 ];
     const SpaghettiItems = [
-    {name1: "Palms spetial vegitable", name2: "ፓልምስ ስፔሻል አትክልት", price: 345},
+  {name1: "Palms special vegitable", name2: "ፓልምስ ስፔሻል አትክልት", price: 345},
     { name1: "Spaghetti with Tomato", name2: "ፓስታ በቲማቲም", price: 175 },
     { name1: "Spaghetti with vegetables", name2: "ፓስታ በአትክልት", price: 195 },
     { name1: "Spaghetti with vegetable and meat", name2: "ፓስታ በአትክልት እና ስጋ", price: 245 },
@@ -653,7 +613,7 @@
 ];
  const pizzaItem = [
         {
-          name1: "Specal Pizza",
+          name1: "Special Pizza",
           name2: "እስፔሻል ፒዛ",
           price: 365,
         },
@@ -664,7 +624,7 @@
         },
 
         {
-          name1: "Specal Chicken Pizza",
+          name1: "Special Chicken Pizza",
           name2: " እስፔሻል ዶሮ ፒዛ ",
           price: 375,
         },
@@ -685,7 +645,7 @@
         },
       
         {
-          name1: "Specal Vegetable Pezza",
+          name1: "Special Vegetable Pezza",
           name2: "እስፔሻል አትክልት ፒዛ",
           price: 325,
         },
@@ -700,7 +660,7 @@
           price: 355,
         },
         {
-          name1: "Specal Tuna pizza ",
+          name1: "Special Tuna pizza ",
           name2: "እስፔሻል ቱና ፒዛ ",
           price: 365,
         },
@@ -714,7 +674,7 @@
       ];
       const burgerItem = [
        {
-          name1: "Specal Burger",
+          name1: "Special Burger",
           name2: "የቤቱ እስፔሻል በርገር",
           price: 325,
         },
@@ -746,7 +706,7 @@
         },
         
         {
-          name1: " Specal Chicken Burger ",
+          name1: " Special Chicken Burger ",
           name2: "እስፔሻል የዶሮ በርገር",
           price: 370,
         },
@@ -887,8 +847,9 @@
       renderMenuItems(breakFastFoodItems, "breakfast-list");
       renderMenuItems(sandwichesItems, "sandwiches-list");
       renderMenuItems(fastFoodItem, "fastfood-list");
-      renderMenuItems(fastbreakFastFoodItems, "fastbreakfast-list");
-      renderMenuItems(traditionalfoodItems, "food-list");
+  renderMenuItems(fastbreakFastFoodItems, "fastbreakfast-list");
+  renderMenuItems(fiyelItems, "fiyel-list");
+  renderMenuItems(traditionalfoodItems, "food-list");
       renderMenuItems(fruitItems, "fruit-list");
       renderMenuItems(softDrinksItems, "softdrink-list");
       renderMenuItems(hotDrinksItems, "hotdrink-list");
